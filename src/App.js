@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {Cink, Dijabetes, Home, Kiselina, Kombinacija, Lumbalni, Neuropatija, Neuropatski, Politika, Stres} from './pages/index'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <div className='App'>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/neuropatski-bol" element={<Neuropatski/>}/>
+            <Route path="/stres" element={<Stres/>}/>
+            <Route path="/dijabetes" element={<Dijabetes/>}/>
+            <Route path="/kombinacija" element={<Kombinacija/>}/>
+            <Route path="/cink" element={<Cink/>}/>
+            <Route path="/lipoinska-kiselina" element={<Kiselina/>}/>
+            <Route path="/lumbalni-bolni-sindrom" element={<Lumbalni/>}/>
+            <Route path="/dijabetesna-neuropatija" element={<Neuropatija/>}/>
+            <Route path="/politika-privatnosti" element={<Politika />}/>
+          </Routes>
+        </div>
+      </Router>
   );
 }
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { laptop, tablet, mobile, midsize } from '../../responsive'
 
 const Container = styled.div`
     display: flex;
@@ -8,54 +9,77 @@ const Container = styled.div`
     position: relative;
 `
 const Background = styled.img`
-    height: 95%;
+    height: 100%;
     width: 100%;
     bottom: 0;
     position: absolute;
     object-fit: cover;
     opacity: 0.5;
+
+    
+    ${midsize({ display: 'none'})};
+`
+const BackgroundSmall = styled.img`
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0.5;
+    display: none;
+
+    
+    ${midsize({ display: 'flex'})};
 `
 const Title = styled.h1`
     padding: 50px 0 0 0;
     color: darkblue;
     cursor: default;
     z-index: 100;
+    margin-right: 20px;
+    margin-left: 20px;
 `
 const Info = styled.div`
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 `
 const Row = styled.div`
     flex: 1;
-    margin: 50px 100px;
+    margin: 40px 100px;
     height: 400px;
     width: 400px;
     background: #5B7DB1;
     border-radius: 10px;
     position: relative;
+
+    
+    ${tablet({ height: '300px', width: '300px', margin: '20px 50px'})};
+
 `
 const Hover = styled.div`
-opacity: 0;
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0;
-left: 0;
-background-color: rgba(0,0,0,0.2);
-z-index: 3;
-display: flex;
-align-items: center;
-justify-content: center;
-transition: all 0.3s ease-in;
-cursor: pointer;
-color: #fff;
-font-size: 20px;
-font-weight: 500;
-border-radius: 10px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
 
-&:hover{
-  opacity:1;
-}
+    &:hover{
+    opacity:1;
+    }
 
 `
 const Image = styled.img`
@@ -71,6 +95,9 @@ const Description = styled.p`
     text-align: center;
     font-weight: 500;
     color: white;
+
+    
+    ${tablet({ fontSize: '16px'})};
 `
  export{ 
     Container,
@@ -80,5 +107,6 @@ const Description = styled.p`
     Hover,
     Image,
     Description,
-    Background
+    Background,
+    BackgroundSmall
 }

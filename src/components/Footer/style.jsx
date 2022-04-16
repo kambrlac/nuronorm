@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { laptop, tablet, mobile, midsize, mobtel } from '../../responsive'
 
 
 const Box = styled.div`
@@ -9,14 +9,29 @@ const Container = styled.div`
     background: #EFFFFD;
     color: darkblue;
     position: relative;
+
+    
+    ${mobtel({flexDirection: 'column'})}
 `
 const Left = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    
+    ${midsize({display: 'none'})}
+`
+const Center = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
     padding: 20px;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
 `
 const Logo = styled.h1`
     cursor: default;
@@ -24,6 +39,8 @@ const Logo = styled.h1`
 const Description = styled.p`
     margin: 20px 0;
     cursor: default;
+    
+    ${mobile({fontSize: '14px'})}
 `
 const SocialContainer = styled.div`
     display: flex;
@@ -58,6 +75,8 @@ const ContactItem = styled.a`
     text-decoration: none;
     color: darkblue;
     cursor: pointer;
+    
+    ${mobile({fontSize: '14px'})}
 
     &:hover{
         color: lightblue;
@@ -72,6 +91,8 @@ const Rights = styled.div`
     justify-content: center;
     align-items: center;
     cursor: default;
+    
+    ${mobile({fontSize: '14px'})}
 `
 export{
     Box,
@@ -85,4 +106,5 @@ Title,
 Right,
 ContactItem,
 Rights,
+Center,
 }

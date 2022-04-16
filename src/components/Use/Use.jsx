@@ -11,7 +11,7 @@ const Use = () => {
         <Title>UPOTREBA</Title>
         <Description>Preporucena je jedna tableta dnevno, pre obroka.</Description>
         <Docs>
-          <a href='/lumbalni-bolni-sindrom'>
+          <a href='/lumbalni-bolni-sindrom' style={{ margin: '0 100px 50px'}}>
             <Row  data-aos="fade" data-aos-duration="1500">
                 <Image src={doktor}/>
                 <Titl>Šta je lumbalni bolni sindrom?</Titl>
@@ -20,7 +20,7 @@ const Use = () => {
                 <Hover>Pročitajte više...</Hover>
             </Row>
           </a>
-          <a  href='/dijabetesna-neuropatija'>
+          <a  href='/dijabetesna-neuropatija' style={{ margin: '0 100px 50px'}}>
             <Row  data-aos="fade" data-aos-duration="1500" data-aos-delay="500">
                 <Image src={doktorka}/>
                 <Titl>Šta je to dijabetesna neuropatija?</Titl>

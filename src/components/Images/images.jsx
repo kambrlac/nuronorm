@@ -9,6 +9,7 @@ import diabetis from './diabetis.jpg'
 import doktor from './doktor.jpg'
 import doktorka from './doktorka.jpg'
 import pozadina from './pozadina.jpg'
+import pozadina2 from './pozadina2.jpg'
 import grafikon1 from './grafikon1.png'
 import grafikon2 from './grafikon2.png'
 import grafikon3 from './grafikon3.png'
@@ -29,6 +30,7 @@ export{
     doktor,
     doktorka,
     pozadina,
+    pozadina2,
     grafikon1,
     grafikon2,
     grafikon3,

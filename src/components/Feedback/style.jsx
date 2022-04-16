@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { laptop, tablet, mobile, midsize, mobtel } from '../../responsive'
+
 
 const Box = styled.div`
  background-color: #9ADCFF;
@@ -17,6 +19,10 @@ const Container = styled.div`
     overflow: hidden;
     jusify-content: center;
     align-items: center;
+    
+    ${midsize({height: '800px'})}
+    ${mobtel({height: '900px'})}
+    ${mobile({height: '950px'})}
 `
 const Arrow = styled.div`
     width: 50px;
@@ -46,11 +52,20 @@ const Slide = styled.div`
     display: flex;
     align-items: center;
     width: 100vw;
-    height 100vh;
-    background-color: #${props => props.bg}
+    min-height 100%;
 `
 const InfoContainer = styled.div`
-    margin: 0 250px 370px 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 250px;
+
+    ${laptop({margin: '0 70px 0'})}
+    ${mobtel({margin: '0 40px 0'})}
+    ${mobile({margin: '0 20px 0'})}
+    
 `
 const Desc = styled.p`
     font-size: 20px;
@@ -58,6 +73,8 @@ const Desc = styled.p`
     letter-spacing: 3px;
     color: darkblue;
     cursor: default;
+    ${tablet({fontSize: '16px'})}
+    ${mobile({fontSize: '14px'})}
 `
 
 export{

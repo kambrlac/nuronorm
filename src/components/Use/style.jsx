@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { laptop, tablet, mobile, midsize } from '../../responsive'
 
 const Container = styled.div`
     display: flex;
@@ -20,6 +20,9 @@ const Docs = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
+    ${tablet({flexDirection: 'column'})}
 `
 const Row = styled.div`
     position: relative;
@@ -27,8 +30,9 @@ const Row = styled.div`
     width: 350px;
     background: #5B7DB1;
     border-radius: 10px;
-    margin: 0 100px 50px;
     color: white;
+
+    ${midsize({height: '350px', width: '275px'})}
 
     
 `
@@ -66,10 +70,13 @@ const Image = styled.img`
 const Titl = styled.h3`
     text-align: center;
     font-weight: 500;
+    ${midsize({fontSize: '16px'})}
 `
 const Desc = styled.p`
     text-align: center;
     font-weight: 400; 
+    
+    ${midsize({fontSize: '12px'})}
 `
 
 export{

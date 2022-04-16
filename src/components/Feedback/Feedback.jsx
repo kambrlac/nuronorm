@@ -25,7 +25,7 @@ const Feedback = () => {
         </Arrow>
         <Wrapper slideIndex={slideIndex}>
         {sliderItems.map(item => (
-            <Slide bg={item.bg} key={item.id}>
+            <Slide key={item.id}>
             <InfoContainer>
                 <Desc>{item.desc}</Desc>
                 <Desc style={{textAlign: 'center'}}>{item.title}</Desc>

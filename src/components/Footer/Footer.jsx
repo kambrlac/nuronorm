@@ -1,18 +1,18 @@
 import { Facebook, Instagram, MailOutline, Phone, Room, Twitter } from "@material-ui/icons"
-import {Box,Container,Left,Logo,Description,SocialContainer,SocialIcon,Title,Right,ContactItem,Rights} from './style'
+import {Box,Container,Left,Logo,Description,SocialContainer,SocialIcon,Title,Right,ContactItem,Rights, Center} from './style'
 
 
 const Footer = () => {
   return (
       <Box id="kontakt">
     <Container>
-        <Right>
+        <Left>
             <Title>KORISNI LINKOVI</Title>
             <ContactItem href="https://www.adoc-pharma.com" target="_blank" rel="noopener noreferrer">AODC</ContactItem>
             <ContactItem href="https://www.oliva.rs/product/nuronorm-tbl-20-adoc" target="_blank" rel="noopener noreferrer">Nuronorm</ContactItem>
             <ContactItem href="/politika-privatnosti">Politika privatnosti</ContactItem>
-        </Right>
-        <Left>
+        </Left>
+        <Center>
             <Logo>NURONORM</Logo>
             <Description>Ovlašćeni predstavnik/distributer ADOC d.o.o. Beograd</Description>
             <SocialContainer>
@@ -26,7 +26,7 @@ const Footer = () => {
                     <Twitter />
                 </SocialIcon>
             </SocialContainer>
-        </Left>
+        </Center>
         <Right>
             <Title>KONTAKT</Title>
             <ContactItem href="tel:+3810113051512"><Phone style={{marginRight:'10px'}}/>+381 (0)11 305 15 12</ContactItem>

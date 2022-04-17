@@ -21,7 +21,7 @@ render(){
              <MenuItem href='/#upotreba'>UPOTREBA</MenuItem>
              <MenuItem href='/#iskustva'>ISKUSTVA</MenuItem>
              <MenuItem href='/#kontakt'>KONTAKT</MenuItem>
-             <MenuItem href='https://www.oliva.rs/product/nuronorm-tbl-20-adoc' target="_blank" rel="noopener noreferrer">PORUCI</MenuItem>
+             <MenuItem href='https://www.oliva.rs/product/nuronorm-tbl-20-adoc' target="_blank" rel="noopener noreferrer">PORUČI</MenuItem>
              <MenuIcon className='menu-icon' onClick={this.handleClick}>
                     <Icon className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></Icon>
                 </MenuIcon>
@@ -33,6 +33,7 @@ render(){
         <DropText href='/#upotreba' onClick={this.handleClick}>UPOTREBA</DropText>
         <DropText href='/#iskustva' onClick={this.handleClick}>ISKUSTVA</DropText>
         <DropText  href='/#kontakt' onClick={this.handleClick}>KONTAKT</DropText>
+        <DropText  href='https://www.oliva.rs/product/nuronorm-tbl-20-adoc' target="_blank" rel="noopener noreferrer" onClick={this.handleClick}>PORUČI</DropText>
         </Dropdown>
     </Container>
   )

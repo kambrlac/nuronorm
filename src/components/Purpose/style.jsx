@@ -36,8 +36,7 @@ const Title = styled.h1`
     color: darkblue;
     cursor: default;
     z-index: 100;
-    margin-right: 20px;
-    margin-left: 20px;
+    text-align: center;
 `
 const Info = styled.div`
     display: flex;

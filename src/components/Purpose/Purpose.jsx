@@ -16,7 +16,7 @@ const Purpose = () => {
         <Row data-aos="fade-up" data-aos-duration="1000">
             <Image src={bol}/>
             <Description>
-                BOL USLED OSTECENJA NERVA
+            Bol usled oštećenja nerava
             </Description>
             <Hover>Pročitajte više...</Hover>
         </Row>
@@ -25,7 +25,7 @@ const Purpose = () => {
         <Row  data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
             <Image src={glava}/>
             <Description>
-                STARENJE CELIJA I OKSIDATIVNI STRES
+            Starenje ćelija i oksidativni stres
             </Description>
             <Hover>Pročitajte više...</Hover>
         </Row>
@@ -34,7 +34,7 @@ const Purpose = () => {
         <Row data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1000">
             <Image src={diabetis}/>
             <Description>
-                DIJABETES I KOMPLIKACIJE
+            Dijabetes i komplikacije
             </Description>
             <Hover>Pročitajte više...</Hover>
         </Row>
